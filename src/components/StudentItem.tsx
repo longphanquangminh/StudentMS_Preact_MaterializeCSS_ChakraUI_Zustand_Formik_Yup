@@ -13,16 +13,16 @@ export default function StudentItem(props: Props) {
       <td>{props.student.email}</td>
       <td>{props.student.phone}</td>
       <td class='row'>
-        <button type='button' onClick={() => updateStudent} class='waves-effect waves-light btn red col s12 m12 l6'>
-          Delete
-        </button>
         <button
           type='button'
           onClick={() => {
             deleteStudent(props.student.id);
           }}
-          class='waves-effect waves-light btn col s12 m12 l6'
+          class='waves-effect waves-light btn red col s12 m12 l6'
         >
+          Delete
+        </button>
+        <button type='button' onClick={() => {}} class='waves-effect waves-light btn col s12 m12 l6'>
           Edit
         </button>
       </td>
